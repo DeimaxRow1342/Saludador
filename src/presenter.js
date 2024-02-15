@@ -18,7 +18,11 @@ form.addEventListener("submit", (event) => {
     div.innerHTML = "<p>" + saludar(nombre, edad, genero) + "</p>";
   }
   else{
-    alert.show("Ingresa un genero valido");
+    alert("Ingresa un genero valido");
+    nombre_input.value = "";
+    edad_input.value = "";
+    genero_input.value = "";
+    div.innerHTML = "";
   }
 
 });
